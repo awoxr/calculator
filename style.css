@@ -9,11 +9,16 @@ body {
     background-color: rgb(54, 43, 58);
 }
 
-.display {
+#display {
     background-color: lightgray;
-    height: 100px;
+    height: 40px;
     width: 300px;
     border-radius: 7px;
+    font-size: 25px;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 button {
@@ -26,14 +31,14 @@ button {
 }
 
 button:active {
-    background-color: rgb(169, 150, 177);
+    background-color: rgb(126, 114, 131);
 }
 
 #zero {
     width: 215px;
 }
 
-.clear {
+#clear {
     min-width: 215px;
 }
 
@@ -51,6 +56,11 @@ button:active {
     display: flex;
     flex-direction: column;
 }
+
+.functions {
+    display: flex;
+    flex-direction: column;
+}
 .calculator {
     padding: 40px;
     width: 400px;
@@ -61,6 +71,6 @@ button:active {
     border-radius: 7px;
 }
 
-.numbers {
+.numPad {
     max-width: 230px;
 }
