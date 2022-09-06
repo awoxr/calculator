@@ -10,6 +10,8 @@ let firstNumber = 0;
 let secondNumber = 0;
 let operator;
 let repeat = true;
+const decimal = document.getElementById('decimal');
+let hasDecimal = false; 
 
 function operate(operator, a, b) {
 	if (operator === 'add') {
@@ -33,6 +35,7 @@ function operate(operator, a, b) {
 }
 
 function writeNumber(e) {
+	if (this.textContent === '.' && inputNum.indexOf('.') > -1) return;
 	inputNum = inputNum + this.textContent;
 	display.textContent = `${inputNum}`
 	e.stopPropagation();
@@ -77,3 +80,4 @@ for (operatorButton of operators) {
 	capture: false
 }
 )};
+

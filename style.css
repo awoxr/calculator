@@ -34,12 +34,17 @@ button:active {
     background-color: rgb(126, 114, 131);
 }
 
-#zero {
-    width: 215px;
+.bottom {
+    display: flex;
+    gap: 8px;
 }
 
 #clear {
     min-width: 215px;
+}
+
+#zero {
+    width: 138px;
 }
 
 .buttons {
